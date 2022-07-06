@@ -1,0 +1,28 @@
+.container{
+    max-width: 80%;
+    border-radius: 5px;
+    background-color: #410102;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.inferior{
+    margin-top: 20%;
+    padding: 4%;
+}
+.txt{
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+.imgs{
+    margin: 5% 0 1% 0;
+}
+.minis{
+    max-width: 8%;
+}

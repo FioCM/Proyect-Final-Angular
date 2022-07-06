@@ -1,3 +1,5 @@
+/* CSS DEL NAVBAR COMPARTIDO */
+
 .superior{
     background-color: #410102;
     padding: 15px;
@@ -37,4 +39,14 @@
 .button:hover{
     background-color: #FFFFFF;
     color: #BA181B;
+}
+
+
+/* CSS DE LA PRUBA DE TARJETAS DE INICIO */
+
+.tarjetas{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
