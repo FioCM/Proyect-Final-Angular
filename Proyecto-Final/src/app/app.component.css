@@ -50,3 +50,11 @@
     flex-direction: row;
     justify-content: space-around;
 }
+
+
+/* CSS DE LA PRUBA DE LOS VIDEOJUEGOS YA ELEGINOS POR EL USUARIO */
+
+.videojuego{
+    display: flex;
+    justify-content: center;
+}
