@@ -1,0 +1,20 @@
+.raiz{
+    background-color: #FFFFFF;
+    padding: 12% 5% 12% 5%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+.texto{
+    max-width: 40%;
+}
+.title{
+    font-size: 4em;
+    font-family: monospace;
+}
+.text{
+    font-size: 2em;
+    font-family: monospace;
+}

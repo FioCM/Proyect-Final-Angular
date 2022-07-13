@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { CardsComponent } from './cards/cards.component';
 import { GameComponent } from './game/game.component';
+import { HomeComponent } from './home/home.component';
+import { SearchComponent } from './search/search.component';
+import { InformationComponent } from './information/information.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SideBarComponent,
     CardsComponent,
-    GameComponent
+    GameComponent,
+    HomeComponent,
+    SearchComponent,
+    InformationComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,

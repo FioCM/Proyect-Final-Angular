@@ -1,42 +1,18 @@
 <div class="superior">
   <div class="container">
-      <span class="span"><b>Home</b></span>
+      <span class="span" [routerLink]="['']"><b>Home</b></span> <!--agregar un router link con las comillas vacias para probar si nos lleva al local host-->
       <input class="input" type="text" placeholder="Search 500,000+ games">
       <button class="button"><b>Search</b></button>
   </div>
 </div>
 
-<!-- ESTO ES UNA PRUEBA DE LA PANTALLA DE TARJETAS DE INICIO -->
-<!-- SE MOVILIZARÁ A UNA PANTALLA PARA EL PROYECTO -->
 
-<br>
-<br>
-<br>
-<br>
-<br>
+<!-- ESTO ES UNA PRUBA DE LAS RUTAS -->
 
-<!-- ESTAS TARJETAS IRÁN DENTRO DE OTRO COMPONENTE PANTALLA, SOLO SON DE PRUEBA PARA VER COMO QUEDARÍAN -->
-
-<div class="tarjetas">
-  <app-cards></app-cards>
-  <app-cards></app-cards>
-  <app-cards></app-cards>
-  <app-cards></app-cards>
+<div class="jsjs">
+  <a [routerLink]="['']">Home</a>
+  <a [routerLink]="['search']">Search</a>
+  <a [routerLink]="['information']">Information</a>
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<!-- ESTA PANTALLA DE VIDEJUEGO ES UNA PRUBA DE COMO QUEDARIA EN EL RESULTADO FINAL, YA QUE IRÁ DENTRO DE OTRO COMPONENTE PANTALLA -->
-
-
-<div class="videojuego">
-  <div class="game">
-    <app-game></app-game>
-  </div>
-</div>
+<router-outlet></router-outlet>

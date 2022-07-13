@@ -42,19 +42,12 @@
 }
 
 
-/* CSS DE LA PRUBA DE TARJETAS DE INICIO */
 
-.tarjetas{
-    padding: 0 5% 0 5%;
+/* prueba de router link */
+
+.jsjs{
+    background-color: coral;
+    font-size: large;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-}
-
-
-/* CSS DE LA PRUBA DE LOS VIDEOJUEGOS YA ELEGINOS POR EL USUARIO */
-
-.videojuego{
-    display: flex;
-    justify-content: center;
 }
