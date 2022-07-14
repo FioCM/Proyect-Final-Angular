@@ -1,37 +1,92 @@
-<div class="container">
-<!-- ESTO PUEDE IR CN UNOS NGIF -->
-    <div class="information">
+<!-- ESTE ES UN CONTENEDOR QUE ALMACENA TODA LA INFORMACIÓN -->
 
-        <h1 class="title">Information about .....</h1>
+<div class="raiz">
 
-        <p class="text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Doloremque repudiandae facere expedita minima enim odio, optio porro 
-            error vero quod dignissimos necessitatibus itaque, veniam aperiam 
-            omnis sed culpa recusandae. Soluta iure accusamus voluptatum 
-            accusantium distinctio rerum facere culpa necessitatibus sed. Lorem 
-            ipsum dolor sit amet consectetur adipisicing elit. Voluptates vel 
-            possimus quod accusantium? Facilis labore sapiente dolores itaque 
-            doloremque quia!
-        </p>
-        
+    <!-- ESTA ZONA SON LOS TITULOS QUE SE ENCUENTRAN FUERA DEL CUADRO DE COLOR CON INFORMACIÓN -->
+
+    <div class="contenedor-titulos">
+
+        <div class="titulos">
+            <h1 class="title first" >{{juego}}</h1>
+            <br>
+            <h2 class="title">{{fecha}}</h2>
+            <br>
+            <h2 class="title">{{tipoJuego}}</h2>
+        </div>
+
     </div>
 
-    <div class="imagenes">
-        
-        <div class="imgs">
-            <img class="img" src="https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg" alt="">
-            <img class="img" src="https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg" alt="">
-        </div>
-        <div class="imgs">
-            <img class="img" src="https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg" alt="">
-            <img class="img" src="https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg" alt="">
-        </div>
-        <div class="imgs">
-            <img class="img" src="https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg" alt="">
-            <img class="img" src="https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg" alt="">
-        </div>
+    <!-- ESTA ZONA ES TODO EL CUADRO DE COLOR CON LA INFOMACION Y ADEMÁS IMAGENES -->
 
+    <div class="padre">
+
+        <div class="container">
+
+            <!-- ESTE CÓDICO ES LA "BARRA" DE ABOUT -->
+
+            <div class="superior">
+
+                <div class="barra">
+
+                    <div class="opciones">
+                        <h2 class="option">{{barra1}}</h2>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ESTE CÓDIGO ES TODA LA INFORMACIÓN DEL ABOUT -->
+
+            <div class="inferior">
+
+                <div class="informacion">
+                    <p>Plataforms: {{plataformas}}</p>
+                    <br>
+                    <p>Publishers: {{publishers}}</p>
+                    <br>
+                    <p>Websites: <a href="">{{websites}}</a> </p>
+                    <br>
+                    <p>{{acercaJuego}}</p>
+                </div>
+
+            </div>
+
+            <br>
+            <br>
+
+            <!-- ESTE CÓDICO ES LA "BARRA" DE SCREENSHOTS/PHOTOS -->
+
+            <div class="superior">
+
+                <div class="barra">
+
+                    <div class="opciones">
+                        <h2 class="option">{{barra2}}</h2>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ESTE CÓDIGO SON LOS SCREENSHOT/PHOTOS DEL VIDEOJUEGO -->
+
+            <div class="imagenes">
+
+                <div class="imgs">
+
+                    <img src="https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg" alt="" class="img">
+                    <img src="https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg" alt="" class="img">
+                    <img src="https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg" alt="" class="img">
+                    <img src="https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg" alt="" class="img">
+                    <img src="https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg" alt="" class="img">
+                    <img src="https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg" alt="" class="img">
+
+                </div>
+
+            </div>
+    
+        </div>
     </div>
 
 </div>
