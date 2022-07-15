@@ -1,0 +1,7 @@
+<nav class="superior">
+    <div class="container">
+      <span class="span" [routerLink]="['']"><b>Home</b></span> <!--agregar un router link con las comillas vacias para probar si nos lleva al local host-->
+      <input #valorBuscado class="input" type="text" placeholder="Search 500,000+ games">
+      <button (click)="irABuscar(valorBuscado.value)" class="button"><b>Search</b></button>
+    </div>
+  </nav>

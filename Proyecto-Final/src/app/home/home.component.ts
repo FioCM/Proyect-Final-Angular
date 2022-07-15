@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DataServiceService } from '../data-service.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  informacionRecibida:any=""
+
+  constructor(private servicio:DataServiceService) { 
+    servicio.getInformationGames().subscribe((data)=>{
+      this.informacionRecibida=data
+    })
+  }
 
   ngOnInit(): void {
   }

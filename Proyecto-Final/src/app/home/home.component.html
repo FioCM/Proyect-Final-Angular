@@ -1,6 +1,4 @@
-<div class="tarjetas">
-  <app-cards [game]="'Nombre del juego'"></app-cards>
-  <app-cards [game]="'Nombre del juego'"></app-cards>
-  <app-cards [game]="'Nombre del juego'"></app-cards>
-  <app-cards [game]="'Nombre del juego'"></app-cards>
+<div>
+  <app-cards *ngFor="let juego of informacionRecibida.results" 
+  [gameImage]="juego.background_image" [gameName]="juego.name" ></app-cards>
 </div>

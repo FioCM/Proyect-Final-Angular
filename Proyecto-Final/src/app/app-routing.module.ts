@@ -8,6 +8,7 @@ import { SearchComponent } from './search/search.component';
 const routes: Routes = [
   {path:'home', component: HomeComponent},
   {path:'search', component: SearchComponent},
+  {path:'search/:id', component: SearchComponent},
   {path:'information', component: InformationComponent},
   {path:'', component: HomeComponent},
   {path:'**', component: ErrorPageComponent}

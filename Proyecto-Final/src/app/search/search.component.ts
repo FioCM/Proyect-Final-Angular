@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ActivatedRoute } from '@angular/router';
+import { DataServiceService } from '../data-service.service';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  valorDelLink:string=""
+  informationApiSearch:any=""
+
+  constructor(private route:ActivatedRoute, private servicio:DataServiceService) { 
+    this.route.params.subscribe((data:any)=>{
+      this.valorDelLink=data.id
+      this.servicio.getInformationSearch(this.valorDelLink).subscribe((info:any)=>{
+        this.informationApiSearch=info
+      })
+    })
+  }
 
   ngOnInit(): void {
   }

@@ -7,9 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CardsComponent implements OnInit {
 
-  @Input () game:string="blablabla"
-  // AQUI AGREGO OTRO INPUT PARA LA IMAGEN DE LAS TARJETAS
-
+  @Input () gameName:string=""
+  @Input () gameImage:string=""
+ 
   constructor() { }
 
   ngOnInit(): void {
