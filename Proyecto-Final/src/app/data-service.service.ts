@@ -9,7 +9,7 @@ export class DataServiceService {
 
    }
   getInformationGames(){
-    return this.http.get("https://rawg.io/api/games?key=73a7407d4e6d457a9e7d357e00ff02d8")
+    return this.http.get(`https://rawg.io/api/games?key=73a7407d4e6d457a9e7d357e00ff02d8`)
   }
   getInformationSearch(valorBusqueda:string){
     // return this.http.get("https://rawg.io/api/games?key=73a7407d4e6d457a9e7d357e00ff02d8&search="+valorBusqueda)

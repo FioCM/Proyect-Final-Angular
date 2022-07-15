@@ -1,3 +1,4 @@
-
-<app-cards *ngFor="let juego of informationApiSearch.results" 
-[gameImage]="juego.background_image" [gameName]="juego.name" ></app-cards>
+<div class="tarjeta">
+    <app-cards *ngFor="let juego of informationApiSearch.results" 
+    [gameImage]="juego.background_image" [gameName]="juego.name" ></app-cards>
+</div>

@@ -1,8 +1,10 @@
-app-cards{
-    padding: 0 5% 0 5%;
-    max-width: 35%;
+div{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+.tarjeta{
+    max-width: 20%;
+    margin: 0.5% 0.5% 0.5% 0.5%;
 }
