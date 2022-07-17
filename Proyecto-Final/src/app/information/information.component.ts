@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ActivatedRoute } from '@angular/router';
+import { DataServiceService } from '../data-service.service';
 @Component({
   selector: 'app-information',
   templateUrl: './information.component.html',
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InformationComponent implements OnInit {
 
-  constructor() { }
+  valorDelLink:string=""
+  informacionRecibida:string=""
+
+  constructor(private ruta:ActivatedRoute, private service:DataServiceService) {
+    this.ruta.params.subscribe((data:any)=>{
+      this.valorDelLink=data.value
+      this.service.getInformationDetallada(this.valorDelLink).subscribe((info:any)=>{
+        this.informacionRecibida=info
+      })
+    })
+   }
 
   ngOnInit(): void {
   }
