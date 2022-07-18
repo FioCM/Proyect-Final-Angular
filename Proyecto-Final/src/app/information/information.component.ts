@@ -9,11 +9,11 @@ import { DataServiceService } from '../data-service.service';
 export class InformationComponent implements OnInit {
 
   valorDelLink:string=""
-  informacionRecibida:string=""
+  informacionRecibida:any=""
 
   constructor(private ruta:ActivatedRoute, private service:DataServiceService) {
     this.ruta.params.subscribe((data:any)=>{
-      this.valorDelLink=data.value
+      this.valorDelLink=data.id
       this.service.getInformationDetallada(this.valorDelLink).subscribe((info:any)=>{
         this.informacionRecibida=info
       })

@@ -1,4 +1,58 @@
-<app-game [juego]="'juago'" [fecha]="'Realese:02/10/2000'" [tipoJuego]="'aventura'" [barra1]="'About'" [barra2]="'Screenshots'" 
-[plataformas]="'play'" [publishers]="'i do not know'" [websites]="'http://www.rockstargames.com/V/'" 
-[acercaJuego]="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae culpa, temporibus dolore odit architecto debitis fugit
-.'"></app-game>
+
+<!-- ESTE ES UN CONTENEDOR QUE ALMACENA TODA LA INFORMACIÓN -->
+
+<div class="raiz">
+
+    <img [src]="informacionRecibida.background_image" alt="" class="img">
+
+    <!-- ESTA ZONA SON LOS TITULOS QUE SE ENCUENTRAN FUERA DEL CUADRO DE COLOR CON INFORMACIÓN -->
+
+    <div class="contenedor-titulos">
+
+        <div class="titulos">
+            <h1 class="title first" >{{informacionRecibida.name}}</h1>
+            <br>
+            <h2 class="title">{{informacionRecibida.released}}</h2>
+            <br>
+            <br>
+        </div>
+
+    </div>
+
+
+
+    <div class="padre">
+
+        <div class="container">
+
+
+
+            <div class="superior">
+
+                <div class="barra">
+
+                    <div class="opciones">
+                        <h2 class="option">ABOUT</h2>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="inferior">
+
+                <div class="informacion">
+                    <br>
+                    <br>
+                    <p class="texto" [innerHTML]="informacionRecibida.description"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

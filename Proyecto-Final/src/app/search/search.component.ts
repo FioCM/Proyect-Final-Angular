@@ -13,7 +13,7 @@ export class SearchComponent implements OnInit {
 
   constructor(private route:ActivatedRoute, private servicio:DataServiceService) { 
     this.route.params.subscribe((data:any)=>{
-      this.valorDelLink=data.id
+      this.valorDelLink=data.value
       this.servicio.getInformationSearch(this.valorDelLink).subscribe((info:any)=>{
         this.informationApiSearch=info
       })

@@ -14,6 +14,7 @@ export class NavbarComponent implements OnInit {
 
   irABuscar(valorBuscado:string){
     this.router.navigate(["search",valorBuscado])
+
   }
 
 }

@@ -1,0 +1,48 @@
+/* CSS DE LA PARTE SUPERIOR CON LOS TITULOS */
+.raiz{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0% 0 5% 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contenedor-titulos{
+    display: flex;
+    justify-content: center;
+}
+.title{
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.first{
+    font-size: 4em;
+}
+
+
+/* CSS DE LA PARTE INFERIOR INFORMACION DEL JUEGO */
+.padre{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    max-width: 65%;
+    background-color: #410102;
+    /* opacity: 90%; */
+    padding: 2.5%;
+}
+.inferior{
+    margin: 2% 0 2% 0;
+    display: flex;
+    justify-content: center;
+}
+.texto{
+    color: #FFFFFF;
+}
+.option{
+    color: #FFFFFF;
+}
+/* CSS DE LA PARTE MEDIA BARRAS DE ABOUT Y SCREENSHOTS/PHOTOS */
+.superior{
+    display: flex;
+    justify-content: center;
+}
