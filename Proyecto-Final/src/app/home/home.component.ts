@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
   informacionRecibida:any=""
 
   constructor(private servicio:DataServiceService) { 
-    servicio.getInformationGames().subscribe((data)=>{
+    servicio.getInformationGames().subscribe((data:any)=>{
       this.informacionRecibida=data
     })
   }
